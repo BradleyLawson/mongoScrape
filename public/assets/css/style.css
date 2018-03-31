@@ -1,0 +1,38 @@
+body{
+    font-family: 'Abril Fatface', cursive;
+}
+.nav-link, .navbar-brand{
+    color: #000;
+    text-shadow: 2px 2px #fff;
+}
+.jumbotron{
+    background: url("../images/newspaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+}
+.individualDivs{
+    background: gray;
+    margin: .5%;
+    border: 1px solid black;
+    box-shadow: 2px 2px #fff;
+}
+
+.btnDivClass{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.saveArtsBtn{
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    border: 1px solid #000;
+    /* box-shadow: 1px 1px #000; */
+}
+.headlineDiv{
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}

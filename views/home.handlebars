@@ -1,0 +1,14 @@
+<h1>This is the Home Page!</h1>
+  <div>
+    {{#each notes}}
+        <div>
+          {{this.title}}
+          {{this.body}}
+          {{this.id}}
+          <a href="/notes/{{this.id}}">Read More</a>
+        </div>
+    {{/each}}
+  </div>
+			  
+
+

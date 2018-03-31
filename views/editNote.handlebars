@@ -1,0 +1,14 @@
+<h1>This is where the edit note form will go</h1>
+<form action="/notes/{{#each notes}}{{this.id}}{{/each}}?_method=PUT" method = "POST">
+<div class="form-group">
+    <label for="noteTitle">Title</label>
+    <input type="text" name = "note[title]" id = "notetitle" value = "{{#each notes}}{{this.title}}{{/each}}">
+</div>
+<div class = "form-group">
+    <label for="noteLeaveComments"></label>
+    <textarea class = "form-group" name="note[body]" id="noteLeaveComments" cols="30" rows="10" id = "noteLeaveComments">{{notes.body}}</textarea>
+</div>   
+<div class="form-group">
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>    
+</div>
+</form>
